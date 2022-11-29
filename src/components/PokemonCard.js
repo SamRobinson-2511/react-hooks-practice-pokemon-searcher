@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "semantic-ui-react";
 
-function PokemonCard() {
+function PokemonCard({ name, image, spriteFront, spriteBack, hp }) {
   return (
     <Card>
       <div>
@@ -9,7 +9,7 @@ function PokemonCard() {
           <img alt="oh no!" />
         </div>
         <div className="content">
-          <div className="header">POKEMON NAME HERE</div>
+          <div className="header">name={name}</div>
         </div>
         <div className="extra content">
           <span>
